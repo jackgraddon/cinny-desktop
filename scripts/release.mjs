@@ -20,8 +20,8 @@ async function createTauriRelease() {
   const github = getOctokit(process.env.GITHUB_TOKEN);
   const { repos } = github.rest;
   const repoMetaData = {
-    owner: context.repo.owner,
-    repo: context.repo.repo,
+    owner: 'jackgraddon',
+    repo: 'cinny-desktop',
   };
 
   const tagsResult = await repos.listTags({ ...repoMetaData, per_page: 10, page: 1 });

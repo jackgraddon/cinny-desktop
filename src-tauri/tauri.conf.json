@@ -7,7 +7,8 @@
     "distDir": "../cinny/dist",
     "devPath": "http://localhost:8080",
     "beforeDevCommand": "cd cinny && npm start",
-    "beforeBuildCommand": "cd cinny && npm run build"
+    "beforeBuildCommand": "cd cinny && npm run build",
+    "withGlobalTauri": true
   },
   "tauri": {
     "bundle": {
@@ -47,14 +48,6 @@
           "dialogImagePath": "wix/dialogImage.bmp"
         }
       }
-    },
-    "updater": {
-      "active": true,
-      "endpoints": [
-          "https://github.com/cinnyapp/cinny-desktop/releases/download/tauri/release.json"
-      ],
-      "dialog": true,
-      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDE2NDc3NDBGMTAzNTk1NUYKUldSZmxUVVFEM1JIRnRuMjVRTkFOQ21lUFI5KzRMU0s4OWtBS1RNRUVCNE9LcE9GcExNZ2M2NHoK"
     },
     "allowlist": {
       "all": true
