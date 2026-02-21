@@ -146,9 +146,9 @@ jobs:
       - name: Move dmg
         run: mv "src-tauri/target/universal-apple-darwin/release/bundle/dmg/Cinny_${{ steps.vars.outputs.tag }}_universal.dmg" "src-tauri/target/universal-apple-darwin/release/bundle/dmg/Cinny_desktop-universal.dmg"
       - name: Move app.tar.gz
-        run: mv "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny.app.tar.gz" "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_desktop-universal.app.tar.gz"
+        run: mv "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_${{ steps.vars.outputs.tag }}_universal.app.tar.gz" "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_desktop-universal.app.tar.gz"
       - name: Move app.tar.gz.sig
-        run: mv "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny.app.tar.gz.sig" "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_desktop-universal.app.tar.gz.sig"
+        run: mv "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_${{ steps.vars.outputs.tag }}_universal.app.tar.gz.sig" "src-tauri/target/universal-apple-darwin/release/bundle/macos/Cinny_desktop-universal.app.tar.gz.sig"
       - name: Upload tagged release
         uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836
         with:
